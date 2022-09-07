@@ -47,9 +47,10 @@
             <form>
 
                 <input type="search" id="search" placeholder="Search for student names">
-                <label for="search">Search for student names</label>
+                <label for="search" class="visually-hidden">Search for student names</label>
                 <i class="bi bi-search lupe"> </i>
                 <div id="class-div">
+                    <label for="class" class="visually-hidden"> Class </label>
                     <select name="class" id="class">
                         <option>NovemberClass2021</option>
                         <option>DezemberClass2021</option>
@@ -57,7 +58,9 @@
                     </select>
 
                 </div>
+
                 <div id="time-div">
+                    <label for="time" class="visually-hidden"> Time</label>
                     <select name="time" id="time">
                         <option>Full-time</option>
                         <option>Part-time</option>

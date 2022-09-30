@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 30vmin;
+}
+.button-style {
+  font-size: 4rem;
+  padding: 0.5em;
+  /*border: 0.1em solid black;*/
+}
+.button-night {
+  background-color: #000000;
+  color: #ff0000;
+  box-shadow: 0.4em 0.6em 0.6em red, 0.4em 0.6em 0.6em red;
+  border-radius: 20px;
+}
+
+.body-night {
+  background-color: #000000;
+}

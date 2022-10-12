@@ -9,79 +9,122 @@
     <meta name="description" content="Overview-Bootcamp-Students">
     <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
     <link rel="stylesheet" href="style.css">
+    <!-- Font Montserrat Semi-bold 600-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <!--Font Source Sans Pro Regular 400und 600-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
     <title>Coding Bootcamps EU - Studenten</title>
 </head>
 
 <body>
-    <header>
-        <h1>CODING BOOTCAMPS EUROPE</h1>
+    <header class="header">
+        <div class="header-flex">
+            <i class="bi bi-list menu-icon"></i>
+            <h1>CODING BOOTCAMPS EUROPE</h1>
+        </div>
+
+        <div class="header__bottom">
+            <svg class="svg-arrow" width="100%" height="100%" fill=var(--contrast-color) viewBox="0 0 100 5"
+                preserveAspectRatio="none">
+                <polygon points="0,0,50,5 100,0"></polygon>
+            </svg>
+        </div>
     </header>
-    <main>
+
+    <main class="main">
         <article>
             <h2>STUDENTS</h2>
-            <p>Your fellow students</p>
+            <p id="subheader">Your fellow students</p>
             <form>
-                <input type="search" id="search">
-                <label for="search">Search for student names</label>
-                <select name="class" id="class">
-                    <option>NovemberClass2021</option>
-                    <option>DezemberClass2021</option>
-                    <option>JanuarClass2022</option>
-                </select>
-                <select name="time" id="time">
-                    <option>Full-time</option>
-                    <option>Part-time</option>
-                </select>
+
+                <input type="search" id="search" placeholder="Search for student names">
+                <label for="search" class="visually-hidden">Search for student names</label>
+                <i class="bi bi-search lupe"> </i>
+                <div id="class-div">
+                    <label for="class" class="visually-hidden"> Class </label>
+                    <select name="class" id="class">
+                        <option>NovemberClass2021</option>
+                        <option>DezemberClass2021</option>
+                        <option>JanuarClass2022</option>
+                    </select>
+
+                </div>
+
+                <div id="time-div">
+                    <label for="time" class="visually-hidden"> Time</label>
+                    <select name="time" id="time">
+                        <option>Full-time</option>
+                        <option>Part-time</option>
+                    </select>
+
+                </div>
+
             </form>
-
-
-
         </article>
 
         <article>
             <h3>Full-time November Class of 2021</h3>
-            <section>
-                <header>
-                    <h4>Dmitry Kolesnikov</h4>
-                    <p>
+            <section class="section">
+                <header class="main-header">
+                    <i class="bi bi-person person-icon"> </i>
+                    <div>
+
+                        <h4>Dmitry Kolesnikov</h4>
+                        <link rel="stylesheet" href="">
                         <a href="https://github.com/Dimi87">github.com/Dimi87</a>
-                    </p>
+
+                    </div>
                 </header>
             </section>
-            <section>
-                <header>
-                    <h4>Justus Siebert</h4>
-                    <p>
+
+            <section class="section">
+                <header class="main-header">
+                    <i class="bi bi-person person-icon"> </i>
+                    <div>
+                        <h4>Justus Siebert</h4>
                         <a href="https://github.com/justussiebert">github.com/justussiebert</a>
-                    </p>
+
+                    </div>
                 </header>
             </section>
-            <section>
-                <header>
-                    <h4>Manuel Hohenadl</h4>
-                    <p>
+            <section class="section">
+                <header class="main-header">
+                    <i class="bi bi-person person-icon"> </i>
+                    <div>
+                        <h4>Manuel Hohenadl</h4>
+
                         <a href=" https://github.com/Manoo89">github.com/Manoo89</a>
-                    </p>
+                    </div>
                 </header>
             </section>
-            <section>
-                <header>
-                    <h4>Ovidiu Goanta</h4>
-                    <p>
+
+            <section class="section">
+                <header class="main-header">
+                    <i class="bi bi-person person-icon"> </i>
+                    <div>
+                        <h4>Ovidiu Goanta</h4>
                         <a href="https://github.com/Goanta-Ovidiu">github.com/Goanta.Ovidiu</a>
-                    </p>
+                    </div>
                 </header>
             </section>
-            <section>
-                <header>
-                    <h4>Patricia Prager</h4>
-                    <p>
+            <section class="section">
+                <header class="main-header">
+                    <i class="bi bi-person person-icon"> </i>
+                    <div>
+                        <h4>Patricia Prager</h4>
                         <a href="https://github.com/patprager">github.com/patprager</a>
-                    </p>
+                    </div>
                 </header>
             </section>
-
-
 
         </article>
     </main>
